@@ -1,0 +1,27 @@
+.booksPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+    .searchBookHolder {
+        display: block;
+        width: 100%;
+        max-width: 706px;
+    }
+
+@media only screen and (max-width: 991px) {
+    .booksPanel {
+        display: block;
+    }
+
+    .searchBookHolder {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .booksPanel button {
+        width: 100%;
+    }
+}
