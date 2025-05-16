@@ -1,0 +1,130 @@
+:root {
+    --primary-color:#10ac84;
+    --secondary-color: #1dd1a1;
+    --background-color: #222f3e;
+    --color-danger: #ff6b6b;
+    --color-danger-secondary: #a54c4c;
+    --color-primary: #2e86de;
+    --color-primary-secondary: #2365a7;
+    --site-transition: all .4s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: var(--background-color);
+}
+
+main {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 60px auto 0;
+}
+
+.btnPrimary {
+    appearance: none;
+    outline: none;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    transition: var(--site-transition);
+}
+
+.btnPrimary:hover {
+    background-color: var(--secondary-color);
+}
+
+.btnDanger {
+    appearance: none;
+    outline: none;
+    background: var(--color-danger);
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    transition: var(--site-transition);
+}
+
+.btnDanger:hover {
+    background-color: var(--color-danger-secondary);
+}
+
+.btnSecondary {
+    appearance: none;
+    outline: none;
+    background: var(--color-primary);
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    transition: var(--site-transition);
+}
+
+.btnSecondary:hover {
+    background-color: var(--color-primary-secondary);
+}
+
+.inputField label {
+    display: none;
+}
+
+.inputField input {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    height: 50px;
+    padding: 0 16px;
+    background: #1a242f;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+}
+
+.inputField.invalid input {
+    border: 1px solid var(--color-danger);
+}
+
+.inputField input::placeholder {
+    color: #949494;
+}
+
+.vaildationMessage {
+    color: var(--color-danger);
+    padding: 5px 0;
+    display: none;
+}
+
+.inputField.invalid .vaildationMessage {
+    display: block;
+}
+
+form button[disabled] {
+    opacity: .50;
+}
