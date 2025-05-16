@@ -1,1 +1,1 @@
-# Book-Catalog-App
+# Book-Catalog-App using React and Firebase
